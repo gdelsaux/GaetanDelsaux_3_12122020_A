@@ -1,0 +1,23 @@
+footer {
+    background-color: #333333;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    h3 {
+        padding-bottom: 20px;
+    }
+    a {
+        @include link;
+        color: white;
+    }
+    ul {
+        list-style: none;
+        padding-bottom: 20px;
+        li {
+            margin-top: 5px;
+            i {
+                padding-right: 10px;
+            }
+        }
+    }
+}

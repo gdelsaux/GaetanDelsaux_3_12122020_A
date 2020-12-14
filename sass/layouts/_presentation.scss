@@ -1,0 +1,27 @@
+.presentation {
+    margin-top: 30px;
+    padding-left: 10px;
+    ul {
+        list-style: none;
+        @include flex-row;
+        flex-wrap: wrap;
+        li {
+            @include box-shadow;
+            display: flex;
+            align-items: center;
+            background-color: $grey;
+            border-radius: 25px;
+            height: 50px;
+            width: 270px;
+            margin: 15px;
+            .step--num {
+                @include step-num;
+                position: relative;
+                right: 10px;
+            }
+            i {
+                padding: 10px;
+            }
+        }
+    }    
+}

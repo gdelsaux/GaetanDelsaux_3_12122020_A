@@ -1,5 +1,20 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 
-h1 {
-    color: $primary;
+@import "./components/buttons";
+
+@import "./layouts/header";
+@import "./layouts/form";
+@import "./layouts/description";
+@import "./layouts/presentation";
+@import "./layouts/footer";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100px;
 }

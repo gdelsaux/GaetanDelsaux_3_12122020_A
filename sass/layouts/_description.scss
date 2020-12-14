@@ -1,0 +1,11 @@
+.description {
+    @include flex-column;
+    align-items: center;
+    background-color: $grey;
+    height: 200px;
+    padding-bottom: 20px;
+    & p {
+        width: 250px;
+        text-align: center;
+    }
+}
