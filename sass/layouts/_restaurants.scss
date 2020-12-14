@@ -1,0 +1,14 @@
+.restaurant {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background-color: $grey;
+    @include flex-column;
+    h2 {
+        padding-left: 20px;
+    }
+    .restaurant--list {
+        @include flex-row;
+        justify-content: space-around;
+        flex-wrap: wrap;   
+    }
+}

@@ -1,0 +1,26 @@
+.restaurant--card {
+    @include card-display;
+    @include box-shadow;
+    a {
+        @include link;
+        &:hover {
+            @include hover-effect;
+        }
+    }
+    img {
+        width: 280px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 25px 25px 0 0;
+    }
+    &__new {
+        @include new__label;        
+    }
+    .card--description {
+        @include flex-row;
+        justify-content: start;
+        padding-top: 10px;
+        padding-left: 25px;
+        height: 50px;
+    }
+}

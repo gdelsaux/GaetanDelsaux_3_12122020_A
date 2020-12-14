@@ -2,12 +2,14 @@
 @import "./utils/mixins";
 
 @import "./components/buttons";
+@import "./components/main-card";
 
 @import "./layouts/header";
 @import "./layouts/form";
 @import "./layouts/description";
 @import "./layouts/presentation";
 @import "./layouts/footer";
+@import "./layouts/restaurants";
 
 
 * {
@@ -15,6 +17,3 @@
     padding: 0;
 }
 
-img {
-    width: 100px;
-}
