@@ -1,13 +1,11 @@
 @mixin flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 @mixin flex-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 @mixin button {
@@ -32,6 +30,32 @@
 }
 
 @mixin box-shadow {
-    box-shadow: 0px 10px 10px 0px #c5c9c9;   
+    box-shadow: 0px 10px 10px 0px #c5c9c9;
+}
 
+@mixin margin {
+    margin-top: 30px;
+}
+
+@mixin card-display {
+    width: 280px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 25px;
+    transition: 200ms ease-in-out;
+}
+
+@mixin new__label {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: $tertiary;
+    position: absolute;
+    left: 200px;
+    text-align: center;
+}
+
+@mixin hover-effect {
+    box-shadow: 10px 10px 20px #b1b5b5;
+    box-shadow: -10px -10px 20px #b1b5b5;
 }
