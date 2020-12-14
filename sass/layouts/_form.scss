@@ -1,0 +1,14 @@
+.location {
+    text-align: center;
+    background-color: $darkgrey;
+    height: 40px;
+    & i {
+        margin-right: 5px;
+        padding-top: 10px;
+    }
+    & input {
+        width: 100px;
+        border: none;
+        background-color: $darkgrey;
+    }
+}
