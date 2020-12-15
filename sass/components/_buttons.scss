@@ -1,7 +1,18 @@
-.main--button {
+.btn__lrg {
     @include button;
     &:hover {
         @include hover-effect;
         @include box-shadow;
+        transform: scale(1.1);
+    }
+}
+
+.btn__sml {
+    @include button;
+    width: 150px;
+    &:hover {
+        @include hover-effect;
+        @include box-shadow;
+        transform: scale(1.1);
     }
 }

@@ -1,132 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>ohmyfood!</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/main.css">
-    <script src="https://kit.fontawesome.com/9094999d18.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <title>ohmyfood!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./sass/main.css">
+        <script src="https://kit.fontawesome.com/9094999d18.js" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <img src="./img/logo/ohmyfood.png" alt="ohmyfood!">
-        </nav>
+    <body>
+        <header>
+            <nav>
+                <img src="./img/logo/ohmyfood.png" alt="ohmyfood!" class="logo">
+            </nav>
 
-        <form>
-            <div class="location">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" placeholder="Paris, Belleville">
+            <form>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Paris, Belleville">
+                </div>
+                <div class="description">
+                    <h2>Book the menu you like</h2>
+                    <p>Discover top-of-the-art restaurants we picked for you</p>
+                    <button class="btn__lrg">Explore our restaurants</button>
+                </div>
+            </form>
+        </header>
+
+        <main>
+            <div class="presentation">
+                <h2>How it works</h2>
+                <ul>
+                    <li>
+                        <span class="step--num">1</span><i class="fas fa-mobile-alt"></i>Choose a restaurant
+                    </li>
+                    <li>
+                        <span class="step--num">2</span><i class="fas fa-list-ul"></i>Create your menu
+                    </li>
+                    <li>
+                        <span class="step--num">3</span><i class="fas fa-store"></i>Go enjoy it at the restaurant
+                    </li>
+                </ul>
             </div>
-            <div class="description">
-                <h2>Book the menu you like</h2>
-                <p>Discover top-of-the-art restaurants we picked for you</p>
-                <button class="main--button">Explore our restaurants</button>
-            </div>
-        </form>
-    </header>
 
-    <main>
-        <div class="presentation">
-            <h2>How it works</h2>
+            <div class="restaurant">
+                <h2>Restaurant</h2>
+                <div class="restaurant--list">
+                    <div class="restaurant--card">
+                        <a href="./theFullPalette.html">
+                            <p class="restaurant--card__new">new</p>
+                            <img src="./img/restaurants/thefullpalette.jpg" alt="The full palette">
+                            <div class="card--description">
+                                <div class="card--description__name">
+                                    <h4>The Full Palette</h4>
+                                    <p>New York</p>
+                                </div>
+                                <i class="far fa-heart card--description__like"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="restaurant--card">
+                        <a href="./theEnchantedPlate.html">
+                            <p class="restaurant--card__new">new</p>
+                            <img src="./img/restaurants/theenchantedplate.jpg" alt="The full palette">
+                            <div class="card--description">
+                                <div class="card--description__name">
+                                    <h4>The Enchanted Plate</h4>
+                                    <p>New York</p>
+                                </div>
+                                <div class="card--description__like">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="restaurant--card">
+                        <a href="./bastille.html">
+                            <img src="./img/restaurants/bastille.jpg" alt="The full palette">
+                            <div class="card--description">
+                                <div class="card--description__name">
+                                    <h4>Bastille</h4>
+                                    <p>New York</p>
+                                </div>
+                                <div class="card--description__like">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="restaurant--card">
+                        <a href="./leGourmand.html">
+                            <img src="./img/restaurants/legourmant.jpg" alt="The full palette">
+                            <div class="card--description">
+                                <div class="card--description__name">
+                                    <h4>Le Gourmand</h4>
+                                    <p>New York</p>
+                                </div>
+                                <div class="card--description__like">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h3>ohmyfood</h3>
             <ul>
-                <li>
-                    <span class="step--num">1</span><i class="fas fa-mobile-alt"></i>Choose a restaurant
-                </li>
-                <li>
-                    <span class="step--num">2</span><i class="fas fa-list-ul"></i>Create your menu
-                </li>
-                <li>
-                    <span class="step--num">3</span><i class="fas fa-store"></i>Go enjoy it at the restaurant
-                </li>
+                <a href="#">
+                    <li><i class="fas fa-utensils"></i>Suggest a restaurant</li>
+                </a>
+                <a href="#">
+                    <li><i class="far fa-handshake"></i>Become a partner</li>
+                </a>
+                <a href="#">
+                    <li>Legal</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
             </ul>
-        </div>
+        </footer>
 
-        <div class="restaurant">
-            <h2>Restaurant</h2>
-            <div class="restaurant--list">
-                <div class="restaurant--card">
-                    <a href="./theFullPalette.html">
-                        <p class="restaurant--card__new">new</p>
-                        <img src="./img/restaurants/thefullpalette.jpg" alt="The full palette">
-                        <div class="card--description">
-                            <div class="card--description__name">
-                                <h4>The full palette</h4>
-                                <p>New York</p>
-                            </div>
-                            <div class="card--description__like">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="restaurant--card">
-                    <a href="./theEnchantedPlate.html">
-                        <p class="restaurant--card__new">new</p>
-                        <img src="./img/restaurants/theenchantedplate.jpg" alt="The full palette">
-                        <div class="card--description">
-                            <div class="card--description__name">
-                                <h4>The Enchanted Plate</h4>
-                                <p>New York</p>
-                            </div>
-                            <div class="card--description__like">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="restaurant--card">
-                    <a href="./bastille.html">
-                        <img src="./img/restaurants/bastille.jpg" alt="The full palette">
-                        <div class="card--description">
-                            <div class="card--description__name">
-                                <h4>Bastille</h4>
-                                <p>New York</p>
-                            </div>
-                            <div class="card--description__like">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="restaurant--card">
-                    <a href="./leGourmand.html">
-                        <img src="./img/restaurants/legourmant.jpg" alt="The full palette">
-                        <div class="card--description">
-                            <div class="card--description__name">
-                                <h4>Le Gourmand</h4>
-                                <p>New York</p>
-                            </div>
-                            <div class="card--description__like">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <h3>ohmyfood</h3>
-        <ul>
-            <a href="#">
-                <li><i class="fas fa-utensils"></i>Suggest a restaurant</li>
-            </a>
-            <a href="#">
-                <li><i class="far fa-handshake"></i>Become a partner</li>
-            </a>
-            <a href="#">
-                <li>Legal</li>
-            </a>
-            <a href="#">
-                <li>Contact</li>
-            </a>
-        </ul>
-    </footer>
-
-</body>
-
+    </body>
 </html>

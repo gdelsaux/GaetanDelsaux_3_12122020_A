@@ -1,11 +1,11 @@
 .restaurant--card {
     @include card-display;
     @include box-shadow;
+    &:hover {
+        transform: scale(1.1);
+    }
     a {
         @include link;
-        &:hover {
-            @include hover-effect;
-        }
     }
     img {
         width: 280px;
@@ -18,9 +18,17 @@
     }
     .card--description {
         @include flex-row;
-        justify-content: start;
+        justify-content: space-between;
         padding-top: 10px;
         padding-left: 25px;
         height: 50px;
+        .fa-heart {
+            margin-right:20px;
+            align-self: center;
+            font-size: 30px;
+            &:hover {
+                background: $gradient;
+            }
+        }
     }
 }

@@ -10,6 +10,7 @@
 @import "./layouts/presentation";
 @import "./layouts/footer";
 @import "./layouts/restaurants";
+@import "./layouts/menu.scss";
 
 
 * {
@@ -17,3 +18,10 @@
     padding: 0;
 }
 
+.dish--item {
+    background-color: white;
+    margin: 20px;
+    width: 300px;
+    border-radius: 20px;
+    @include box-shadow;
+}
