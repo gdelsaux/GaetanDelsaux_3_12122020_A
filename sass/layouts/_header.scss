@@ -1,7 +1,19 @@
 header {
-    & img {
+    .logo {
         width: 150px;
+        margin: 20px auto;
         display: block;
-        margin: 8px auto;
+    }
+    .return--home {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 5px;
+        color: black;
+    }
+    .dish__preview {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
     }
 }

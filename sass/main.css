@@ -1,4 +1,4 @@
-.main--button {
+.btn__lrg {
   padding: 10px;
   border: none;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
@@ -9,13 +9,38 @@
   transition: 200ms ease-in-out;
 }
 
-.main--button:hover {
+.btn__lrg:hover {
   -webkit-box-shadow: 10px 10px 20px #b1b5b5;
           box-shadow: 10px 10px 20px #b1b5b5;
   -webkit-box-shadow: -10px -10px 20px #b1b5b5;
           box-shadow: -10px -10px 20px #b1b5b5;
   -webkit-box-shadow: 0px 10px 10px 0px #c5c9c9;
           box-shadow: 0px 10px 10px 0px #c5c9c9;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn__sml {
+  padding: 10px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 20px;
+  color: white;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  width: 150px;
+}
+
+.btn__sml:hover {
+  -webkit-box-shadow: 10px 10px 20px #b1b5b5;
+          box-shadow: 10px 10px 20px #b1b5b5;
+  -webkit-box-shadow: -10px -10px 20px #b1b5b5;
+          box-shadow: -10px -10px 20px #b1b5b5;
+  -webkit-box-shadow: 0px 10px 10px 0px #c5c9c9;
+          box-shadow: 0px 10px 10px 0px #c5c9c9;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .restaurant--card {
@@ -29,16 +54,14 @@
           box-shadow: 0px 10px 10px 0px #c5c9c9;
 }
 
+.restaurant--card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .restaurant--card a {
   text-decoration: none;
   color: black;
-}
-
-.restaurant--card a:hover {
-  -webkit-box-shadow: 10px 10px 20px #b1b5b5;
-          box-shadow: 10px 10px 20px #b1b5b5;
-  -webkit-box-shadow: -10px -10px 20px #b1b5b5;
-          box-shadow: -10px -10px 20px #b1b5b5;
 }
 
 .restaurant--card img {
@@ -50,13 +73,15 @@
 }
 
 .restaurant--card__new {
-  height: 30px;
+  height: 25px;
   width: 80px;
   border-radius: 5px;
   background-color: #99E2D0;
   position: absolute;
-  left: 200px;
+  margin: 10px 10px 0 180px;
+  padding-top: 3px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .restaurant--card .card--description {
@@ -67,18 +92,46 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 10px;
   padding-left: 25px;
   height: 50px;
 }
 
-header img {
+.restaurant--card .card--description .fa-heart {
+  margin-right: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 30px;
+}
+
+.restaurant--card .card--description .fa-heart:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+header .logo {
   width: 150px;
+  margin: 20px auto;
   display: block;
-  margin: 8px auto;
+}
+
+header .return--home {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 5px;
+  color: black;
+}
+
+header .dish__preview {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
 }
 
 .location {
@@ -235,8 +288,54 @@ footer ul li i {
       flex-wrap: wrap;
 }
 
+main {
+  background-color: #f2f3f5;
+}
+
+main .restaurant--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 50px;
+  border-radius: 20px 20px 0 0;
+}
+
+main .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.dish--item {
+  background-color: white;
+  margin: 20px;
+  width: 300px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 10px 0px #c5c9c9;
+          box-shadow: 0px 10px 10px 0px #c5c9c9;
 }
 /*# sourceMappingURL=main.css.map */

@@ -46,13 +46,15 @@
 }
 
 @mixin new__label {
-    height: 30px;
+    height: 25px;
     width: 80px;
     border-radius: 5px;
     background-color: $tertiary;
     position: absolute;
-    left: 200px;
+    margin: 10px 10px 0 180px;
+    padding-top: 3px;
     text-align: center;
+    vertical-align: middle;
 }
 
 @mixin hover-effect {

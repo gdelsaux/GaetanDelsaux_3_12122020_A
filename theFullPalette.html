@@ -1,32 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>ohmyfood!</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/main.css">
-    <script src="https://kit.fontawesome.com/9094999d18.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <head>
-        <nav>
-            <img src="./img/logo/ohmyfood.png" alt="ohmyfood!">
-        </nav>
-    </head>
+        <head>
+            <title>ohmyfood!</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./sass/main.css">
+            <script src="https://kit.fontawesome.com/9094999d18.js" crossorigin="anonymous"></script>
+        </head>
 
     <body>
-        
-    </body>
+        <header>
+                <nav>
+                    <a href="./index.html"><i class="fas fa-arrow-left return--home"></i></a>
+                    <img src="./img/logo/ohmyfood.png" alt="ohmyfood!" class="logo">
+                </nav>
+                <img src="./img/restaurants/thefullpalette.jpg" alt="thefullpalette restaurant" class="dish__preview">
+        </header>
 
-    <header>
-        <h3>ohmyfood</h3>
-        <ul>
-            <a href="#"><li><i class="fas fa-utensils"></i>Suggest a restaurant</li></a>
-            <a href="#"><li><i class="far fa-handshake"></i>Become a partner</li></a>
-            <a href="#"><li>Legal</li></a>
-            <a href="#"><li>Contact</li></a>
-        </ul>
-    </header>
-</body>
+        <body>    
+                <main>
+                    <section class="restaurant--name">
+                        <h2>The Full Palette</h2>
+                        <i class="far fa-heart card--description__like"></i>
+                    </section>
+                    <section class="menu">
+                        <div class="menu--category">
+                            <h3>ENTREES</h3>
+                            <div class="dish--item">
+                                <h4 class="dish--name">Escargot</h4>
+                                <div class="dish--description">
+                                    <p>With southern French spices</p>
+                                    <p class="price">25€</p>
+                                </div>
+                            </div>
+                            <div class="dish--item">
+                                <h4 class="dish--name">Duck Foie Gras</h4>
+                                <div class="dish--description">
+                                    <p>With black truffle shavings</p>
+                                    <p class="price">35€</p>
+                                </div>
+                            </div>
+                            <div class="dish--item">
+                                <h4 class="dish--name">Fried egg</h4>
+                                <div class="dish--description">
+                                    <p>With chives</p>
+                                    <p class="price">20€</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu--category">
+                            <h3>MAIN DISH</h3>
+                            <div class="dish--item">
+                                <h4 class="dish--name">Herb_Encrusted Steak</h4>
+                                <div class="dish--description">
+                                    <p>With delicately sliced and seasoned vegetable</p>
+                                    <p class="price">40€</p>
+                                </div>
+                            </div>
+                            <div class="dish--item">
+                                <h4 class="dish--name">Ox Tail Shepard's Pie</h4>
+                                <div class="dish--description">
+                                    <p>With black truffle and pureed parsnips</p>
+                                    <p class="price">35€</p>
+                                </div>
+                            </div>
+                            <div class="dish--item">
+                                <h4 class="dish--name">Fillet of Sole</h4>
+                                <div class="dish--description">
+                                    <p>With citus dressing</p>
+                                    <p class="price">44€</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu--category">
+                            <h3>DESSERTS</h3>
+                            <div class="dish--item">
+                                <h4 class="dish--name">Paris-Brest</h4>
+                                <div class="dish--description">
+                                    <p>Revisited</p>
+                                    <p class="price">18€</p>
+                                </div>
+                            </div>
+                            <div class="dish--item">
+                                <h4 class="dish--name">Chocolate Macaroons</h4>
+                                <div class="dish--description">
+                                    <p>With vanillla ice cream</p>
+                                    <p class="price">22€</p>
+                                </div>
+                            </div>
+                            <div class="dish--item">
+                                <h4 class="dish--name">Chocolate Mouse</h4>
+                                <div class="dish--description">
+                                    <p>With spices and black truffle</p>
+                                    <p class="price">23€</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <button class="btn__sml">Order</button>
+                </main>
+        </body>
+
+        <footer>
+                <h3>ohmyfood</h3>
+                <ul>
+                    <a href="#">
+                        <li><i class="fas fa-utensils"></i>Suggest a restaurant</li>
+                    </a>
+                    <a href="#">
+                        <li><i class="far fa-handshake"></i>Become a partner</li>
+                    </a>
+                    <a href="#">
+                        <li>Legal</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+        </footer>
+    </body>
+</html>
