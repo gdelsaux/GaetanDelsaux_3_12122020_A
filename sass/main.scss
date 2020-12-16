@@ -1,8 +1,11 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 
+@import "./base/typographie";
+
 @import "./components/buttons";
 @import "./components/main-card";
+@import"./components/menu--category";
 
 @import "./layouts/header";
 @import "./layouts/form";
@@ -16,12 +19,4 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-.dish--item {
-    background-color: white;
-    margin: 20px;
-    width: 300px;
-    border-radius: 20px;
-    @include box-shadow;
 }
