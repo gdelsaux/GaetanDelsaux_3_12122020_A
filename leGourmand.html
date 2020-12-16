@@ -6,28 +6,119 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./sass/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9094999d18.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <head>
-            <nav>
-                <img src="./img/logo/ohmyfood.png" alt="ohmyfood!">
-            </nav>
-        </head>
-
-        <body>
-            
-        </body>
-
         <header>
-            <h3>ohmyfood</h3>
-            <ul>
-                <a href="#"><li><i class="fas fa-utensils"></i>Suggest a restaurant</li></a>
-                <a href="#"><li><i class="far fa-handshake"></i>Become a partner</li></a>
-                <a href="#"><li>Legal</li></a>
-                <a href="#"><li>Contact</li></a>
-            </ul>
+                <nav>
+                    <a href="./index.html"><i class="fas fa-arrow-left return--home"></i></a>
+                    <img src="./img/logo/ohmyfood.png" alt="ohmyfood!" class="logo">
+                </nav>
+                <img src="./img/restaurants/legourmant.jpg" alt="thefullpalette restaurant" class="dish__preview">
         </header>
+
+        <main>
+            <section class="restaurant--name">
+                        <h2>Le Gourmand</h2>
+                        <i class="far fa-heart card--description__like"></i>
+            </section>
+            <section class="menu">
+                <div class="menu--category">
+                    <h3>ENTREES</h3>
+                    <div class="dish--item">
+                        <div class="dish--description">
+                            <h4 class="dish--name">Tuna Carpaccio</h4>
+                            <p>Seasoned with yuzu</p>
+                        </div>
+                        <p class="price">25€</p>
+                    </div>
+                    <div class="dish--item">
+                        <div class="dish--description">
+                            <h4 class="dish--name">Crunchy Lobster Croquets</h4>
+                            <p>With seasonal vegetable</p>
+                        </div>
+                        <p class="price">35€</p>
+                    </div>
+                    <div class="dish--item">
+                        <div class="dish--description">
+                            <h4 class="dish--name">Mushroom soup</h4>
+                            <p>With truffles</p>
+                        </div>
+                        <p class="price">20€</p>
+                    </div>
+                </div>
+                <div class="menu--category">
+                    <h3>MAIN DISH</h3>
+                    <div class="dish--item">
+                        <div class="dish--description">
+                            <h4 class="dish--name">Roast Chicken with Provincal Herbs</h4>
+                            <p>With truffle cream</p>
+                        </div>
+                        <p class="price">40€</p>
+                    </div>
+                    <div class="dish--item">
+                        <div class="dish--description">
+                            <h4 class="dish--name">Roasted Lobster</h4>
+                            <p>With seasona vegetables</p>
+                        </div>
+                        <p class="price">35€</p>
+                    </div>
+                    <div class="dish--item">
+                        <div class="dish--description">
+                            <h4 class="dish--name">Angust Beef Ribs</h4>
+                            <p>With mashed parsnips</p>
+                        </div>
+                        <p class="price">44€</p>
+                    </div>
+                </div>
+                <div class="menu--category">
+                    <h3>DESSERTS</h3>
+                    <div class="dish--item">
+                        <div class="dish--description">
+                            <h4 class="dish--name">Assorted Dessert Plate</h4>
+                            <p>Chef's choice</p>
+                        </div>
+                        <p class="price">18€</p>
+                    </div>
+                    <div class="dish--item">
+                        <div class="dish--description">
+                            <h4 class="dish--name">Creme Brulee</h4>
+                            <p>Revisited</p>
+                        </div>
+                        <p class="price">22€</p>
+                        
+                    </div>
+                    <div class="dish--item">
+                        <div class="dish--description">
+                            <h4 class="dish--name">Tiramisu</h4>
+                            <p>With hazelnuts</p>
+                        </div>                          
+                        <p class="price">23€</p>
+                    </div>
+                </div>
+                <button class="btn__sml">Order</button>
+            </section>
+        </main>
+
+        <footer>
+                <h3 class="site--name">ohmyfood</h3>
+                <ul>
+                    <a href="#">
+                        <li><i class="fas fa-utensils"></i>Suggest a restaurant</li>
+                    </a>
+                    <a href="#">
+                        <li><i class="far fa-handshake"></i>Become a partner</li>
+                    </a>
+                    <a href="#">
+                        <li>Legal</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+        </footer>
     </body>
 </html>

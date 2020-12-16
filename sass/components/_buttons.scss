@@ -10,6 +10,7 @@
 .btn__sml {
     @include button;
     width: 150px;
+    margin-top: 40px;
     &:hover {
         @include hover-effect;
         @include box-shadow;

@@ -1,5 +1,6 @@
 main{
     background-color: $grey;
+    padding-bottom: 40px;
     .restaurant--name {
         @include flex-row;
         justify-content: space-between;

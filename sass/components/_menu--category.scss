@@ -1,0 +1,28 @@
+.menu--category {
+    margin-top: 40px;
+    h3 {
+        width: 120px;
+        border-bottom: solid 2px $tertiary;
+    }
+    .dish--item {
+        @include flex-row;
+        @include box-shadow;
+        justify-content: space-between;
+        padding: 0 10px;
+        border-radius: 20px;
+        background-color: white;
+        margin-top: 20px;
+        border-radius: 20px;
+        width: 280px;
+        height: 70px;
+        .dish--description{
+            @include flex-column;
+            justify-content: space-around;
+        }
+        .price {
+            font-weight: bold;
+            align-self: flex-end;
+            margin-bottom: 5px;
+        }
+    }
+}

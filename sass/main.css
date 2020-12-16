@@ -1,3 +1,15 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body .restaurant--name {
+  font-family: 'Shrikhand', cursive;
+}
+
+body .site--name {
+  font-family: 'Shrikhand', cursive;
+}
+
 .btn__lrg {
   padding: 10px;
   border: none;
@@ -30,6 +42,7 @@
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
   width: 150px;
+  margin-top: 40px;
 }
 
 .btn__sml:hover {
@@ -111,6 +124,56 @@
 .restaurant--card .card--description .fa-heart:hover {
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+.menu--category {
+  margin-top: 40px;
+}
+
+.menu--category h3 {
+  width: 120px;
+  border-bottom: solid 2px #99E2D0;
+}
+
+.menu--category .dish--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0px 10px 10px 0px #c5c9c9;
+          box-shadow: 0px 10px 10px 0px #c5c9c9;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 280px;
+  height: 70px;
+}
+
+.menu--category .dish--item .dish--description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu--category .dish--item .price {
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 5px;
 }
 
 header .logo {
@@ -290,6 +353,7 @@ footer ul li i {
 
 main {
   background-color: #f2f3f5;
+  padding-bottom: 40px;
 }
 
 main .restaurant--name {
@@ -328,14 +392,5 @@ main .menu {
 * {
   margin: 0;
   padding: 0;
-}
-
-.dish--item {
-  background-color: white;
-  margin: 20px;
-  width: 300px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 10px 10px 0px #c5c9c9;
-          box-shadow: 0px 10px 10px 0px #c5c9c9;
 }
 /*# sourceMappingURL=main.css.map */
