@@ -5,4 +5,5 @@ $tertiary: #99E2D0;
 $darkgrey: #e8e8e8;
 $grey: #f2f3f5;
 
-$gradient: linear-gradient(to bottom right, $secondary, $primary);
+$gradient: linear-gradient($secondary, $primary);
+$gradient-light: linear-gradient($secondary 30%, $primary);
