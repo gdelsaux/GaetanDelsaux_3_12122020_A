@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @import "./utils/variables";
 @import "./utils/mixins";
 
@@ -5,8 +10,10 @@
 
 @import "./components/buttons";
 @import "./components/main-card";
-@import"./components/menu--category";
+@import "./components/menu--category";
+@import "./components/heart";
 
+@import "./layouts/loader";
 @import "./layouts/header";
 @import "./layouts/form";
 @import "./layouts/description";
@@ -15,8 +22,17 @@
 @import "./layouts/restaurants";
 @import "./layouts/menu.scss";
 
+@import "./pages/media-queries";
 
-* {
-    margin: 0;
-    padding: 0;
+.check--mark {
+    animation: rotation 300ms ease-in-out;
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

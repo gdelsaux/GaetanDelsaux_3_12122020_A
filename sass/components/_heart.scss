@@ -1,0 +1,25 @@
+.like {
+    font-size: 30px;
+    margin-right: 40px;
+    .heart {
+        z-index: 1;
+        position: absolute;
+        transform: scale(1);
+        transition: transform 200ms ease-in-out;
+        &:hover {
+            opacity: 0;
+        }
+        &__true {
+            position: absolute;
+            opacity: 1;
+            background: $gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(0);
+            transition: transform 300ms ease-in-out;
+        }
+        &:hover + .heart__true {
+            transform: scale(1);
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .btn__sml {
+        width: 260px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 765px) {
+    .presentation {
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        ul {
+            @include flex-column;
+            align-items: center;
+        }
+    }
+    .restaurant--card {
+        width: 300px;
+    }
+    .menu--category {
+        width: 60%;
+        .dish--item {
+
+        }
+    }
+    .btn__sml {
+        width: 260px;
+        height: 40px;
+    }
+    footer {
+        @include flex-column;
+        align-items: center;
+        ul {
+            @include flex-column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 766px) and (max-width: 1050px) {
+    .restaurant--card {
+        width: 320px;
+    }
+    .menu--category {
+        width: 60%;
+        .dish--item {
+            margin: 25px auto;
+        }
+    }
+    .btn__sml {
+        width: 400px;
+        height: 50px;
+    }
+    footer {
+        @include flex-column;
+        align-items: center;
+        ul {
+            @include flex-column;
+            align-items: center;
+        }
+    }
+}
+@media screen and (min-width: 1051px) {
+    .menu--category {
+        width: 700px;
+        .dish--item {
+            width: 400px;
+            margin: 25px auto;
+        }
+    }
+    .btn__sml {
+        width: 400px;
+        height: 50px;
+    }
+    footer {
+        @include flex-column;
+        align-items: center;
+        ul {
+            @include flex-column;
+            align-items: center;
+        }
+    }
+}

@@ -12,6 +12,13 @@
     </head>
 
     <body>
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <header>
             <nav>
                 <img src="./img/logo/ohmyfood.png" alt="ohmyfood!" class="logo">
@@ -58,7 +65,10 @@
                                     <h4>The Full Palette</h4>
                                     <p>New York</p>
                                 </div>
-                                <i class="far fa-heart card--description__like"></i>
+                                <div class="like">
+                                    <i class="far fa-heart heart"></i>
+                                    <i class="fas fa-heart heart__true"></i>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -71,8 +81,9 @@
                                     <h4>The Enchanted Plate</h4>
                                     <p>New York</p>
                                 </div>
-                                <div class="card--description__like">
-                                    <i class="far fa-heart"></i>
+                                <div class="like">
+                                    <i class="far fa-heart heart"></i>
+                                    <i class="fas fa-heart heart__true"></i>
                                 </div>
                             </div>
                         </a>
@@ -85,8 +96,9 @@
                                     <h4>Bastille</h4>
                                     <p>New York</p>
                                 </div>
-                                <div class="card--description__like">
-                                    <i class="far fa-heart"></i>
+                                <div class="like">
+                                    <i class="far fa-heart heart"></i>
+                                    <i class="fas fa-heart heart__true"></i>
                                 </div>
                             </div>
                         </a>
@@ -99,8 +111,9 @@
                                     <h4>Le Gourmand</h4>
                                     <p>New York</p>
                                 </div>
-                                <div class="card--description__like">
-                                    <i class="far fa-heart"></i>
+                                <div class="like">
+                                    <i class="far fa-heart heart"></i>
+                                    <i class="fas fa-heart heart__true"></i>
                                 </div>
                             </div>
                         </a>
@@ -112,18 +125,10 @@
         <footer>
             <h3 class="site--name">ohmyfood</h3>
             <ul>
-                <a href="#">
-                    <li><i class="fas fa-utensils"></i>Suggest a restaurant</li>
-                </a>
-                <a href="#">
-                    <li><i class="far fa-handshake"></i>Become a partner</li>
-                </a>
-                <a href="#">
-                    <li>Legal</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
+                <li><a href="#"><i class="fas fa-utensils"></i>Suggest a restaurant</a></li>
+                <li><a href="#"><i class="far fa-handshake"></i>Become a partner</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="mailto:email@email.co">Contact</a></li>
             </ul>
         </footer>
 
