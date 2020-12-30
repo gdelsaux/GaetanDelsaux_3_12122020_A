@@ -48,6 +48,10 @@
             overflow: hidden;
             color: white;
             transition: width 300ms ease-in-out;
+            animation: rotate 3000ms ease-in-out;
+            & .check--mark {
+                
+            }
         }
         &:hover > .dish--item__selected {
             position: relative;

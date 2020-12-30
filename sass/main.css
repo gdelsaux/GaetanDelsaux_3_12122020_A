@@ -220,6 +220,8 @@ body .site--name {
   color: white;
   -webkit-transition: width 300ms ease-in-out;
   transition: width 300ms ease-in-out;
+  -webkit-animation: rotate 3000ms ease-in-out;
+          animation: rotate 3000ms ease-in-out;
 }
 
 .menu--category .dish--item:hover > .dish--item__selected {
@@ -772,11 +774,6 @@ main .menu {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-.check--mark {
-  -webkit-animation: rotation 300ms ease-in-out;
-          animation: rotation 300ms ease-in-out;
 }
 
 @-webkit-keyframes rotate {
