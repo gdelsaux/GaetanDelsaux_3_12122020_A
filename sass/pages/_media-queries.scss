@@ -3,6 +3,7 @@
         width: 260px;
         height: 40px;
     }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 765px) {
@@ -20,14 +21,21 @@
         width: 300px;
     }
     .menu--category {
-        width: 60%;
+        width: 80%;
         .dish--item {
-
+            width: 80%;
+        }
+        .dish--description {
+            width: 80%;
         }
     }
     .btn__sml {
         width: 260px;
         height: 40px;
+    }
+    .dish--item {
+        width: 80%;
+        margin: auto;
     }
     footer {
         @include flex-column;
@@ -44,9 +52,13 @@
         width: 320px;
     }
     .menu--category {
-        width: 60%;
+        width: 80%;
         .dish--item {
-            margin: 25px auto;
+            width: 80%;
+            margin: 20px auto;
+        }
+        .dish--description {
+            width: 80%;
         }
     }
     .btn__sml {
@@ -63,13 +75,21 @@
     }
 }
 @media screen and (min-width: 1051px) {
+
     .menu--category {
-        width: 700px;
+        width: 900px;
         .dish--item {
-            width: 400px;
-            margin: 25px auto;
+            width: 80%;
+        }
+        .dish--description {
+            width: 80%;
         }
     }
+
+    .dish--item {
+        margin: 25px auto;
+    }
+
     .btn__sml {
         width: 400px;
         height: 50px;
