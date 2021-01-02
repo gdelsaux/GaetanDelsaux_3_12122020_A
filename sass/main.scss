@@ -5,6 +5,7 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 
 @import "./base/typographie";
 
@@ -24,15 +25,15 @@
 
 @import "./pages/media-queries";
 
-.check--mark {
-    animation: rotation 300ms ease-in-out;
-}
 
-@keyframes rotate{
-    from {
-        transform: rotate(0deg);
+
+@keyframes upward {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
     }
-    to {
-        transform: rotate(360deg);
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }

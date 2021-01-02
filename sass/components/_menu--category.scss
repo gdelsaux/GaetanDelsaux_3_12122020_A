@@ -19,19 +19,44 @@
         background-color: white;
         margin-top: 20px;
         border-radius: 20px;
-        width: 280px;
         height: 70px;
+        width: 280px;
+        min-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         &:hover {
             cursor: pointer;
+            & .check--mark {
+                animation: rotate 500ms ease-in-out;
+            }
+        &:focus {
+            cursor: pointer;
+            & .check--mark {
+                animation: rotate 500ms ease-in-out;
+            }
+        }
         }
         .dish--description{
             @include flex-column;
             justify-content: space-around;
+            min-width: 0;
+            h4{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         .price {
             font-weight: bold;
             align-self: flex-end;
             margin-bottom: 5px;
+            padding-right: 10px;
         }
         &__selected {
             @include flex-column;
@@ -54,5 +79,58 @@
             width: 50px;
             margin-right: -10px;
         }
+        &:active > .dish--item__selected {
+            position: relative;
+            width: 50px;
+            margin-right: -10px;
+        }
+    }
+}
+
+.dish--entree {
+    animation: upward 1000ms ease-in-out both;
+    &__first {
+        animation: upward 1000ms 200ms ease-in-out both;
+    }
+    &__second {
+        animation: upward 1000ms 300ms ease-in-out both;
+    }
+    &__third {
+        animation: upward 1000ms 400ms ease-in-out both;
+    }
+    &__fourth {
+        animation: upward 1000ms 500ms ease-in-out both;
+    }
+}
+
+.dish--main {
+    animation: upward 1000ms ease-in-out both;
+    &__first {
+        animation: upward 1000ms 200ms ease-in-out both;
+    }
+    &__second {
+        animation: upward 1000ms 300ms ease-in-out both;
+    }
+    &__third {
+        animation: upward 1000ms 400ms ease-in-out both;
+    }
+    &__fourth {
+        animation: upward 1000ms 500ms ease-in-out both;
+    }
+}
+
+.dish--dessert {
+    animation: upward 1000ms ease-in-out both;
+    &__first {
+        animation: upward 1000ms 200ms ease-in-out both;
+    }
+    &__second {
+        animation: upward 1000ms 300ms ease-in-out both;
+    }
+    &__third {
+        animation: upward 1000ms 400ms ease-in-out both;
+    }
+    &__fourth {
+        animation: upward 1000ms 500ms ease-in-out both;
     }
 }
