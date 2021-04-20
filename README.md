@@ -2,7 +2,7 @@ Link to the website hosted online: https://gdelsaux.github.io/GaetanDelsaux_3_12
 
 This is project 3 from the Web Developer path on openclassrooms.
 
-Presentation:
+## Presentation ##
 
    - The task for this project is to create a platform where users can find a restaurant of their choice in the French capital and preorder the meal of their choice.
 
@@ -13,9 +13,9 @@ Presentation:
    - With this project I have introduced some basic animation such as spinning, scaling and fade in with @keyframes.
 
 
-PROJECT EXPECTATIONS:
+## Project Expectations ##
 
-1- Graphic Identity:
+### 1- Graphic Identity: ###
 
 Fonts:
 Logo and Titles: Shrikhand
@@ -27,7 +27,7 @@ Secondary #FF79DA
 Tertiary #99E2D0
 				
 
-2 - Compatibility:
+### 2 - Compatibility: ###
 
 As the target market is the connected and hurried population, the site will be developed using the mobile-first approach. For this reason, only mobile models will be made.
 
@@ -40,9 +40,9 @@ On tablet and desktop, the site will have to adapt, but these formats are not a 
    - The site must be fully compatible with the latest desktop versions of Chrome, Firefox and     Safari.
     
 
-DELIVERABLES:
+## DELIVERABLES: ##
 
-1 - Page Content:
+### 1 - Page Content: ###
 
 Homepage (x1):
 
@@ -66,7 +66,7 @@ Header:
    - The menu pages contain a button to return to the home page.
     
     
-2 - Graphic effects and animations
+### 2 - Graphic effects and animations ###
 
 The effects accessible by hovering are visible on the model. The must use CSS animations or transitions, no JavaScript or library.
 
